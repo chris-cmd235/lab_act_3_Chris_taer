@@ -65,8 +65,6 @@ console.log("\nBase = " + base + " -> check " + n + " -> " + (isPrime(n) ? "Prim
 
 console.log("\n--------------------------------------------------------------------\n");
 
-console.log("\nProblem 4: Multiplication Table\n");
-
 //Problem 4: Multiplication Table
 
 console.log("\nProblem 4: Multiplication Table\n");
@@ -77,6 +75,6 @@ function multiplicationTable(n) {
         console.log(n + " x " + i + " = " + (n * i));
     }
 }
-console.log("\n");
+
 multiplicationTable(base);
 //end
