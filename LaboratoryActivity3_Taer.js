@@ -5,6 +5,7 @@
 const base = 7;
 
 //Problem 1: Grade Calculator
+console.log("\nProblem 1: Grade Calculator");
 
 function calculateGrade(score){
     if (score >= 90 && score <= 100) return 'A';
@@ -15,10 +16,13 @@ function calculateGrade(score){
 }
 
 const score = base * 10 + 5;
-console.log("\nScore: " +score+ ", Grade: "+calculateGrade(score)+"\n");
+console.log("\nBase = "+base+" -> Score: " +score+ " -> Grade: "+calculateGrade(score)+"\n");
 
+console.log("\n--------------------------------------------------------------------\n");
 
-//Problem 2: Star Pattern
+//Problem 2: Star Pattern 
+console.log("\nProblem 2: Star Pattern\n");
+
 function ShowStars(rows){
     let pattern = "";
     for (let i = 1; i <= rows; i++){
@@ -34,8 +38,12 @@ function ShowStars(rows){
 }
 
 const rows = base + 2;
-console.log("Star Pattern for "+rows+" rows: \n");
+console.log("Base = "+base+" -> rows = "+rows+" \n");
 ShowStars(rows)
+
+console.log("\n--------------------------------------------------------------------\n");
+
+console.log("\nProblem 3: Prime Number Checker\n");
 
 //Problem 3: Prime Number Checker 
 
@@ -50,5 +58,25 @@ function isPrime(n){
     return true;
 }
 
-console.log("\n Is "+base+" prime? "+isPrime(base)+" \n");
+//If base = 3 → check 13 → Prime
 
+const n = base + 10
+console.log("\nBase = " + base + " -> check " + n + " -> " + (isPrime(n) ? "Prime" : "Not Prime") + " \n");
+
+console.log("\n--------------------------------------------------------------------\n");
+
+console.log("\nProblem 4: Multiplication Table\n");
+
+//Problem 4: Multiplication Table
+
+console.log("\nProblem 4: Multiplication Table\n");
+
+function multiplicationTable(n) {
+    console.log("Multiplication Table for " + n + ":\n");
+    for (let i = 1; i <= 10; i++) {
+        console.log(n + " x " + i + " = " + (n * i));
+    }
+}
+console.log("\n");
+multiplicationTable(base);
+//end
